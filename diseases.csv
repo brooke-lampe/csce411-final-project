@@ -1,0 +1,202 @@
+1,Abdominal aortic aneurysm 
+2,Acne 
+3,Acute cholecystitis 
+4,Acute lymphoblastic leukaemia 
+5,Acute myeloid leukaemia 
+6,Acute pancreatitis 
+7,Addison's disease 
+8,Alcohol misuse 
+9,Alcohol poisoning 
+10,Alcohol-related liver disease 
+11,Allergic rhinitis  
+12,Alzheimer's disease 
+13,Anal cancer 
+14,Anaphylaxis 
+15,Angioedema 
+16,Ankylosing spondylitis 
+17,Anorexia nervosa 
+18,Anxiety 
+19,Appendicitis 
+20,Arthritis 
+21,Asbestosis 
+22,Asthma 
+23,Atopic eczema 
+24,Attention deficit hyperactivity disorder (ADHD) 
+25,Autistic spectrum disorder (ASD) 
+26,Bacterial vaginosis  
+27,Bile duct cancer (cholangiocarcinoma) 
+28,Bipolar disorder 
+29,Bladder cancer 
+30,Blood cancer 
+31,Blood poisoning (sepsis) 
+32,Bone cancer 
+33,Bowel cancer 
+34,Bowel incontinence 
+35,Bowel polyps 
+36,Brain stem death 
+37,Brain tumours 
+38,Breast cancer
+39,Bronchiectasis 
+40,Bronchitis 
+41,Bunion 
+42,Bursitis 
+43,Carcinoid syndrome 
+44,
+45,Catarrh 
+46,Cellulitis
+47,Cervical cancer 
+48,Chest infection 
+49,Chest pain 
+50,Chickenpox 
+51,Chilblains 
+52,Chronic fatigue syndrome 
+53,Chronic kidney disease 
+54,Chronic lymphocytic leukaemia 
+55,Chronic myeloid leukaemia 
+56,Chronic obstructive pulmonary disease 
+57,Chronic pancreatitis 
+58,Cirrhosis 
+59,Clostridium difficile 
+60,Coeliac disease 
+61,Congenital heart disease 
+62,Conjunctivitis 
+63,Costochondritis 
+64,Crohn's disease 
+65,Croup 
+66,Cystic fibrosis 
+67,Cystitis 
+68,Deafblindness 
+69,Deep vein thrombosis 
+70,Dehydration 
+71,Dementia 
+72,Dementia with Lewy bodies 
+73,Dental abscess 
+74,Depression 
+75,Dermatitis herpetiformis 
+76,Diabetes 
+77,Discoid eczema 
+78,Diverticular disease and diverticulitis
+79,Dizziness (Lightheadedness) 
+80,Dysphagia (swallowing problems) 
+81,Dystonia 
+82,Ebola virus disease 
+83,Endometriosis 
+84,Epilepsy 
+85,Ewing sarcoma 
+86,Eye cancer 
+87,Febrile seizures 
+88,Fever in children 
+89,Fibroids 
+90,Fibromyalgia 
+91,Flatulence 
+92,Foetal alcohol syndrome 
+93,Gallbladder cancer 
+94,Gallstones 
+95,Gastroenteritis 
+96,Genital herpes 
+97,Genital warts 
+98,Germ cell tumours 
+99,Glandular fever 
+100,Gout 
+101,Gum disease 
+102,Haemorrhoids (piles) 
+103,Hairy cell leukaemia 
+104,"Hand, foot and mouth disease "
+105,Hay fever 
+106,Head and neck cancer 
+107,Hearing loss 
+108,Heart failure 
+109,Hepatitis A 
+110,Hepatitis B 
+111,Hepatitis C 
+112,Hiatus hernia 
+113,High cholesterol 
+114,HIV 
+115,Hodgkin lymphoma 
+116,Huntington's disease 
+117,Hyperglycaemia (high blood sugar) 
+118,Hyperhidrosis 
+119,Hypoglycaemia (low blood sugar) 
+120,Idiopathic pulmonary fibrosis 
+121,Impetigo 
+122,Inherited heart conditions 
+123,Iron deficiency anaemia 
+124,Irritable bowel syndrome (IBS) 
+125,Irritable hip 
+126,Kaposi's sarcoma 
+127,Kidney cancer 
+128,Kidney infection 
+129,Kidney stones 
+130,Labyrinthitis 
+131,Lactose intolerance 
+132,Langerhans cell histiocytosis 
+133,Laryngeal (larynx) cancer 
+134,Laryngitis 
+135,Lichen planus 
+136,Liver cancer 
+137,Liver disease 
+138,Liver tumours 
+139,Lung cancer 
+140,Lupus 
+141,Lyme disease 
+142,Lymphoedema 
+143,Malignant brain tumour (cancerous)
+144,Measles 
+145,Meningitis 
+146,Mesothelioma 
+147,Migraine 
+148,Motor neurone disease (MND) 
+149,Mouth cancer 
+150,Mouth ulcer 
+151,Multiple myeloma 
+152,Multiple sclerosis (MS) 
+153,Mumps 
+154,Meniere's disease
+155,Nasopharyngeal cancer
+156,Neuroblastoma
+157,Non-alcoholic fatty liver disease (NAFLD)
+158,Non-Hodgkin lymphoma
+159,Norovirus 
+160,Obstructive sleep apnoea
+161,Osteoporosis
+162,Osteosarcoma
+163,Otitis externa
+164,Overactive thyroid
+165,Paget's disease of the nipple
+166,Pancreatic cancer
+167,Parkinson's disease
+168,Peripheral neuropathy
+169,Pleurisy
+170,Polymyalgia rheumatica
+171,Prostate cancer
+172,Psoriasis
+173,Psoriatic arthritis 
+174,Restless legs syndrome
+175,Retinoblastoma
+176,Rhabdomyosarcoma
+177,Rheumatoid arthritis
+178,Rosacea
+179,Scoliosis
+180,Sickle cell disease
+181,Sjogren's syndrome
+182,Skin cancer (melanoma)
+183,Skin cancer (non-melanoma)
+184,Slapped cheek syndrome
+185,Soft tissue sarcomas
+186,Stomach cancer
+187,Stroke
+188,Thyroid cancer
+189,Transient ischaemic attack (TIA)
+190,Trigeminal neuralgia
+191,Tuberculosis (TB)
+192,Type 1 diabetes
+193,Type 2 diabetes
+194,Ulcerative colitis
+195,Underactive thyroid
+196,Urinary incontinence]
+197,Varicose eczema
+198,Varicose veins
+199,Venous leg ulcer
+200,Vitamin B12 or folate deficiency anaemia
+201,Wilms’ tumour 
+202,Yellow fever 
