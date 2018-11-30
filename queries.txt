@@ -14,4 +14,6 @@ CREATE (d:Disease{id: toInteger(line.id), name: line.name});
 LOAD CSV WITH HEADERS FROM "file:///has_disease.csv" AS line 
 MATCH (p:Person {id: toInteger(line.person_id)})
 MATCH (d:Disease {id: toInteger(line.disease_id)})
-CREATE (p)-[:HAS_DISEASE {id:line.disease_relationship_id}]->(d)
+CREATE (p)-[:HAS_DISEASE {id:line.disease_relationship_id}]->(d)p
+
+MATCH p=()-[r:PARENT_OF]->() RETURN p

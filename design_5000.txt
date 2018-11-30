@@ -1,0 +1,5 @@
+1st 1000 	children
+2nd 1000 	500 fathers of 1st - start at 1, 500 mothers of 1st - start at 1
+3rd 1000 	500 siblings of 1st - start at 251, 500 siblings of 2nd - start at 1251
+4th 1000 	500 fathers of 2nd - start at 1001, 500 mothers of 2nd - start at 1001
+5th 750 	250 siblings of 4th - start at 3001, 250 fathers of 4th - 3001, 500 mothers of 4th - 3001
