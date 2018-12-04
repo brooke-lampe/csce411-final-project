@@ -3,7 +3,6 @@
 <style>
 
 .node circle {
-  fill: #fff;
   stroke: steelblue;
   stroke-width: 3px;
 }
@@ -28,16 +27,23 @@
 
 var treeData =
   {
-    "name": "Top Level",
+    "name": "person's name",
+	"type": "root",
     "children": [
       { 
-        "name": "Level 2: A",
+        "name": "person's name", "type": "parent",
         "children": [
-          { "name": "Son of A" },
-          { "name": "Daughter of A" }
+          { "name": "Disease X", "type": "disease"},
+          { "name": "person's name", "type": "parent", },
+		  { "name": "person's name", "type": "parent", }
         ]
       },
-      { "name": "Level 2: B" }
+      { 
+		"name": "person's name", "type": "parent",
+		"children": [
+          { "name": "Disease X", "type": "disease"},
+		]
+	  }
     ]
   };
 
@@ -68,8 +74,7 @@ root = d3.hierarchy(treeData, function(d) { return d.children; });
 root.x0 = height / 2;
 root.y0 = 0;
 
-// Collapse after the second level
-root.children.forEach(collapse);
+
 
 update(root);
 
@@ -113,7 +118,12 @@ function update(source) {
       .attr('class', 'node')
       .attr('r', 1e-6)
       .style("fill", function(d) {
-          return d._children ? "lightsteelblue" : "#fff";
+			if (d.data.type === 'root'){
+				return "red";
+			} else if (d.data.type === 'parent'){
+				return "black";
+			}
+           return "#fff";
       });
 
   // Add labels for the nodes
@@ -141,7 +151,12 @@ function update(source) {
   nodeUpdate.select('circle.node')
     .attr('r', 10)
     .style("fill", function(d) {
-        return d._children ? "lightsteelblue" : "#fff";
+        if (d.data.type === 'root'){
+				return "red";
+			} else if (d.data.type === 'parent'){
+				return "black";
+			}
+           return "#fff";
     })
     .attr('cursor', 'pointer');
 
