@@ -1,0 +1,27 @@
+LOAD CSV WITH HEADERS FROM "file:///parents.csv" AS line
+MATCH (p:Person{id: toInteger(line.person_id)}) 
+MATCH (f:Person{id: toInteger(line.parent_id)}) 
+CREATE (p)-[:PARENT {id: line.id}]->(f)
+
+LOAD CSV WITH HEADERS FROM "file:///parents.csv" AS line
+MATCH (p:Person{id: toInteger(line.person_id)}) 
+MATCH (f:Person{id: toInteger(line.parent_id)}) 
+CREATE (p)<-[:CHILD {id: line.id}]-(f)
+
+LOAD CSV WITH HEADERS FROM "file:///diseases.csv" AS line 
+CREATE (d:Disease{id: toInteger(line.id), name: line.name});
+
+LOAD CSV WITH HEADERS FROM "file:///has_disease.csv" AS line 
+MATCH (p:Person {id: toInteger(line.person_id)})
+MATCH (d:Disease {id: toInteger(line.disease_id)})
+CREATE (p)-[:HAS_DISEASE {id:line.disease_relationship_id}]->(d)p
+
+START j=node(426)
+OPTIONAL MATCH (j)-[:PARENT*..10]->(k)
+WHERE size((k)-[:PARENT]->()) = 0
+OPTIONAL MATCH (k)-[:CHILD*..10]->(node) 
+OPTIONAL MATCH (j)-[:CHILD*..10]->(node1)
+OPTIONAL MATCH (node)-[:HAS_DISEASE]->(node2)
+OPTIONAL MATCH (node1)-[:HAS_DISEASE]->(node3)
+OPTIONAL MATCH (k)-[:HAS_DISEASE]->(node4)
+RETURN DISTINCT k, j, node, node1, node2, node3, node4
