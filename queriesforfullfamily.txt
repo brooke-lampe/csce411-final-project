@@ -23,5 +23,5 @@ OPTIONAL MATCH (k)-[:CHILD*..10]->(node)
 OPTIONAL MATCH (j)-[:CHILD*..10]->(node1)
 OPTIONAL MATCH (node)-[:HAS_DISEASE]->(node2)
 OPTIONAL MATCH (node1)-[:HAS_DISEASE]->(node3)
-OPTIONAL MATCH (k)-[:HAS_DISEASE]->(node4)
+OPTIONAL MATCH (j)-[:HAS_DISEASE]->(node4)
 RETURN DISTINCT k, j, node, node1, node2, node3, node4
