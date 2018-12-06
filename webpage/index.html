@@ -2,37 +2,59 @@
 <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="http://neo4j-contrib.github.io/developer-resources/language-guides/assets/css/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
+    table {
+        display: block;
+        height: 500px;
+        overflow-y: scroll;
+    }
 
-.node circle {
-  stroke: steelblue;
-  stroke-width: 3px;
-}
+    td {
+        vertical-align: middle !important;
+    }
+    .node circle {
+        stroke: steelblue;
+        stroke-width: 3px;
+    }
 
-.node text {
-  font: 12px sans-serif;
-}
+    .node text {
+        font: 12px sans-serif;
+    }
 
-.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 2px;
-}
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 2px;
+    }
 
 </style>
 
 <body>
-<div class = "container">
-            <form role="search" class="navbar-form" id="search">
-                <div class="form-group">
-                    <input type="text" id="query" placeholder="Enter Query"class="form-control" name="search" value="match path = (patient:Person{first_name: 'Paddy'})-[*]->(parent:Person), path1 = (patient)-[:HAS_DISEASE]->(disease1), path2 = (parent)-[:HAS_DISEASE]->(disease) return path, path1, path2;">
-                </div>
-                <button type="submit" class="btn btn-default">Search</button>
-                <button class="btn btn-default" id="reset">Reset</button>
-            </form>
-        </div>
 
-<!-- load the d3.js library -->	
+<div class="container">
+    <div id="alert-div" class="row justify-content-center" style="margin: 0 auto; width: 50%"></div>
+    <form role="search" class="navbar-form" id="search">
+        <div class="form-group">
+            <input type="text" id="query" placeholder="Enter Patient Id" class="form-control" name="search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+    </form>
+    <div class="row">
+        <div class="col-md-8" style="right: 20px; overflow-x: scroll"><svg width="900" height="500"></svg></div>
+        <div class="col-md-4" style="left: 20px;">
+            <table class="table table-bordered" style="background-color: white; width: 350px; visibility: hidden">
+                <tr>
+                    <th>Patients</th>
+                    <th>Diseases</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- load the d3.js library -->
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="index.js"></script>
 
